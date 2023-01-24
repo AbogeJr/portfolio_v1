@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/dist/output.css" />
     <title>Demo</title>
   </head>
-  <body class="relative">
-    <header>
+  <body class="relative bg-black">
+    <header class="md:mx-auto md:w-4/5">
       <nav
         class="w-full text-white px-6 py-4 z-20 flex items-center justify-between bg-black bg-opacity-70 relative"
       >
@@ -17,13 +17,26 @@
           <span class="text-neutral-500">/&gt;</span>
         </h1>
 
-        <img src="menu.png" class="w-11" alt="" />
-        <div class="absolute top-0 right-0 left-0 bottom-0 blur-sm z-30"></div>
+        <!-- Responsive Menu Button -->
+        <div id="menu-btn" class="md:hidden menu-button">
+          <span class="hamburger hamburger-top"></span
+          ><span class="hamburger hamburger-middle"></span
+          ><span class="hamburger hamburger-bottom"></span>
+        </div>
+        <div
+          id="menu"
+          class="hidden backdrop-blur-sm border animate-bounce-aj border-neutral-600 mx-6 absolute p-5 py-36 top-16 rounded-lg left-0 right-0 justify-center items-center bg-black/50 flex-col space-y-6 md:hidden md:space-x-6 font-extrabold"
+        >
+          <a class="text-2xl" href="#">Home</a>
+          <a class="text-2xl" href="#">About</a>
+          <a class="text-2xl" href="#">Projects</a>
+          <a class="text-2xl" href="#">Contact</a>
+        </div>
       </nav>
     </header>
-    <div class="absolute top-0 right-0 left-0 bottom-0">
+    <div class="md:w-4/5 md:mx-auto absolute top-0 right-0 left-0 bottom-0">
       <div
-        class="text-neutral-300 bg-neutral-900 flex flex-col md:flex-row w-8/10 mx-auto"
+        class="text-neutral-300 bg-black flex flex-col md:flex-row w-8/10 mx-auto"
       >
         <div
           class="w-full md:w-2/5 bg-black flex h-screen pt-24 px-6 flex-col justify-start relative items-center"
@@ -33,28 +46,32 @@
             id="particles-js"
           ></div>
           <img
-            class="w-3/5 my-10 rounded-full z-10 md:w-2/5"
+            class="w-3/5 my-14 rounded-full z-10 md:rounded-none md:w-2/5"
             src="aboge-modified.jpg"
             alt=""
           />
           <!-- <p>Hello</p> -->
-          <h1 class="text-3xl font-light text-white text-center mb-1">
+          <h1 class="text-3xl font-light text-white text-center mt-5 mb-1">
             Aloys Aboge Jr
           </h1>
           <h2 class="text-center mb-6 text-neutral-400 text-lg">
             Software Developer
           </h2>
-          <div class="flex flex-col space-y-5 absolute bottom-0 left-0 p-5">
-            <a href="#!" role="button">
+          <!-- Social Icons -->
+          <div
+            class="flex flex-col space-y-5 absolute bottom-0 left-0 p-5 after:w-px after:h-12 after:self-center after:bg-neutral-500 after:mt-3 before:w-px before:h-12 before:self-center before:bg-neutral-500 before:mb-3"
+          >
+            <a href="#!" role="button" class="group">
               <!-- Instagram -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
-                class="w-7 h-7"
+                class="w-6 h-6"
                 style="color: rgb(200, 200, 200)"
               >
                 <path
                   fill="currentColor"
+                  class="group-hover:fill-red-600"
                   d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
                 />
               </svg>
@@ -65,7 +82,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 488 512"
-                class="w-7 h-7"
+                class="w-6 h-6"
                 style="color: rgb(200, 200, 200)"
               >
                 <path
@@ -80,7 +97,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="w-7 h-7"
+                class="w-6 h-6"
                 style="color: rgb(200, 200, 200)"
               >
                 <path
@@ -95,8 +112,10 @@
           class="w-full md:w-3/5 font-sans bg--400 p-6 pt-20 text-justify overflow-scroll"
         >
           <section id="home">
-            <h3 class="text-xl font-bold border-l-4 px-4 my-6 border-l-red-500">
-              Home Section
+            <h3
+              class="text-xl font-bold border-l-4 px-4 my-6 border-l-neutral-500"
+            >
+              Who is Aloys?
             </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
@@ -108,9 +127,12 @@
             </p>
           </section>
           <section id="home">
-            <h3 class="text-xl font-bold border-l-4 px-4 my-6 border-l-red-500">
+            <h3
+              class="text-xl font-bold border-l-4 px-4 my-6 border-l-neutral-500"
+            >
               About Section
             </h3>
+
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
               dolor nemo molestiae ab. Voluptate sit libero unde magnam odio
@@ -121,7 +143,9 @@
             </p>
           </section>
           <section id="home" class="">
-            <h3 class="text-xl font-bold border-l-4 px-4 my-6 border-l-red-500">
+            <h3
+              class="text-xl font-bold border-l-4 px-4 my-6 border-l-neutral-500"
+            >
               Contact Section
             </h3>
             <p>

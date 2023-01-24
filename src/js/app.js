@@ -131,3 +131,18 @@ particlesJS(
     },
   }
 );
+
+const btn = document.getElementById("menu-btn");
+const bars = document.getElementsByClassName("hamburger");
+const menu = document.getElementById("menu");
+
+btn.addEventListener("click", () => {
+  btn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+  // menu.classList.toggle(".animate-bounce-aj");
+  for (let bar of bars) {
+    bar.classList.toggle("open");
+  }
+  // console.log("clickety");
+});
