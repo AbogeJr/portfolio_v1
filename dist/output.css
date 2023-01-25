@@ -579,6 +579,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1164,13 +1168,25 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-4\/5 {
@@ -1185,6 +1201,10 @@ video {
     width: 60%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1197,5 +1217,9 @@ video {
 
   .md\:rounded-none {
     border-radius: 0px;
+  }
+
+  .md\:border-none {
+    border-style: none;
   }
 }
