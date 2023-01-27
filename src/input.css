@@ -25,10 +25,10 @@
   transition: 0.5s;
 }
 .open .hamburger-top {
-  transform: rotate(-45deg) translateY(12px);
+  transform: rotate(-40deg) translateY(12px);
 }
 .open .hamburger-bottom {
-  transform: rotate(45deg) translateY(-12px);
+  transform: rotate(40deg) translateY(-12px);
 }
 .open .hamburger-middle {
   display: none;
