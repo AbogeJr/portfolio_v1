@@ -144,5 +144,4 @@ btn.addEventListener("click", () => {
   for (let bar of bars) {
     bar.classList.toggle("open");
   }
-  // console.log("clickety");
 });
