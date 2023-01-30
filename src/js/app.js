@@ -136,6 +136,13 @@ const btn = document.getElementById("menu-btn");
 const bars = document.getElementsByClassName("hamburger");
 const menu = document.getElementById("menu");
 
+const loader = document.getElementById("loading");
+
+window.addEventListener("load", (event) => {
+  loader.classList.toggle("hidden");
+  loader.classList.toggle("flex");
+});
+
 btn.addEventListener("click", () => {
   btn.classList.toggle("open");
   menu.classList.toggle("flex");
