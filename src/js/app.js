@@ -143,6 +143,10 @@ window.addEventListener("load", (event) => {
   loader.classList.toggle("flex");
 });
 
+// $(window).load(function () {
+//   $("#loading").hide();
+// });
+
 btn.addEventListener("click", () => {
   btn.classList.toggle("open");
   menu.classList.toggle("flex");
