@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Montserrat";
+}
+
 .menu-button {
   width: 30px;
   height: 20px;
