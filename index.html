@@ -87,16 +87,14 @@
         </div>
       </nav>
     </header>
-    <div
-      class="md:w-full w-screen md:mx-auto absolute top-0 right-0 left-0 bottom-0"
-    >
+    <div class="w-full h-screen absolute top-0 right-0 left-0 bottom-0">
       <div
-        class="w-full snap-y snap-mandatory h-screen overflow-auto overflow-x-hidden font-sans"
+        class="h-screen w-full snap-y snap-mandatory overflow-scroll overflow-x-hidden font-sans"
       >
         <!-- Hero -->
         <section
           id="hero"
-          class="w-ful md:fixed pt-20 md:w-2/5 md:px-24 md:pt-24 snap-start bg-black flex h-full flex-col relative items-center"
+          class="w-full md:fixed pt-20 md:w-2/5 md:px-24 md:pt-24 snap-start bg-black flex h-screen flex-col relative items-center"
         >
           <div
             class="absolute top-0 right-0 md:pl-20 left-0 bottom-0"
@@ -213,7 +211,7 @@
           <!-- Skills Section -->
           <section
             id="skills"
-            class="p-2 px-6 md:px-24 pt-16 md:pt-10 snap-start w-full h-screen"
+            class="p-2 px-6 md:px-24 pt-16 md:pt-24 snap-start w-full h-screen"
           >
             <h3 class="text-4xl my-6">
               My <span class="text-neutral-400">Skills</span>
@@ -237,26 +235,27 @@
           <!-- Projects Section -->
           <section
             id="projects"
-            class="snap-x snap-center py-6 snap-mandatory h-screen flex w-screen md:w-full relative overflow-scroll overflow-y-clip"
+            class="snap-x snap-center snap-mandatory h-screen flex w-screen md:w-full relative overflow-scroll overflow-y-clip"
           >
             <!-- Project 1 -->
             <div
-              class="snap-start w-screen px-6 md:px-24 md:w-full md:h-full flex-shrink-0 h-screen flex items-center justify-center text-xl"
+              class="snap-start w-full px-6 md:px-24 md:w-full md:h-full flex-shrink-0 h-screen flex items-center justify-center text-xl"
             >
               <fieldset
-                class="border relative border-b-0 border-gray-400 w-full h-4/5 p-3"
+                class="border relative border-b-0 border-gray-400 w-full md:h-4/5 py-10 p-3"
               >
                 <legend class="p-4">
                   <span class="text-neutral-400">PROJECT</span> 01
                 </legend>
-                <figure class="w-full">
+                <figure class="w-full mb-7">
                   <img src="./assets/img/gaks.png" class="w-full" alt="" />
-                  <figcaption class="text-sm text-center p-2">
-                    Freelancing Project: An Architecture Website
+                  <figcaption class="text-sm md:text-center py-2">
+                    <span class="text-neutral-400">Freelancing Project:</span>
+                    An Architecture Website
                   </figcaption>
-                  <figcaption class="text-sm text-center p-2 py-0">
-                    TechStack: HTML5, CSS3, Bootstrap, Owl Carousel, jQuery,
-                    Netlify
+                  <figcaption class="text-sm md:text-center">
+                    <span class="text-neutral-400">Technologies used:</span>
+                    HTML5, CSS3, Bootstrap, Owl Carousel, jQuery, Netlify
                   </figcaption>
                 </figure>
                 <!-- Eye icon -->
@@ -269,7 +268,7 @@
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
-                    stroke="currentColor"
+                    stroke="#fff"
                     class="w-6 h-6"
                   >
                     <path
@@ -391,13 +390,13 @@
                   <label
                     for="email"
                     class="block mb-2 font-medium text-gray-300"
-                    >Your email</label
+                    >Your name</label
                   >
                   <input
                     type="email"
                     id="email"
                     class="shadow-sm bg-neutral-900 text-black placeholder:text-sm block w-full p-3"
-                    placeholder="example@email.com"
+                    placeholder="ex. John Doe"
                     required
                   />
                 </div>
@@ -423,7 +422,7 @@
                   >
                   <textarea
                     id="message"
-                    rows="6"
+                    rows="4"
                     class="shadow-sm bg-neutral-900 text-black placeholder:text-sm block w-full p-3"
                     placeholder="Leave a comment..."
                   ></textarea>

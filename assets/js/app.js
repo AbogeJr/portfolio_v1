@@ -20,20 +20,20 @@ particlesJS(
         value: 150,
         density: {
           enable: true,
-          value_area: 1000,
+          value_area: 1050,
         },
       },
       color: {
         value: "#ffffff",
       },
       shape: {
-        type: "circle",
+        type: "square",
         stroke: {
-          width: 0,
-          color: "#000000",
+          width: 5,
+          color: "#fff",
         },
         polygon: {
-          nb_sides: 6,
+          nb_sides: 25,
         },
         image: {
           src: "img/github.svg",
@@ -63,14 +63,14 @@ particlesJS(
       },
       line_linked: {
         enable: true,
-        distance: 150,
+        distance: 170,
         color: "#fff",
-        opacity: 0.4,
-        width: 1,
+        opacity: 0.5,
+        width: 0.5,
       },
       move: {
         enable: true,
-        speed: 6,
+        speed: 8,
         direction: "none",
         random: false,
         straight: false,
