@@ -1232,22 +1232,6 @@ video {
     margin-right: 0px;
   }
 
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .md\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
-  .md\:mb-3 {
-    margin-bottom: 0.75rem;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -1262,14 +1246,6 @@ video {
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:h-4\/5 {
-    height: 80%;
-  }
-
-  .md\:h-3\/5 {
-    height: 60%;
   }
 
   .md\:w-2\/5 {
@@ -1302,10 +1278,10 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
+  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
