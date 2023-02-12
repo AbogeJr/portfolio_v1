@@ -105,13 +105,33 @@
           id="menu"
           class="hidden bg-gray-500/5 backdrop-blur-lg border border-neutral-600 fixed mx-6 p-5 py-40 top-16 bottom-10 rounded-lg left-0 right-0 flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:top-auto md:rounded-none md:left-auto md:right-0 md:p-0 md:mx-0 md:static md:border-none md:flex md:space-x-6"
         >
-          <a class="text-lg hover:text-neutral-400" href="#home">Home</a>
+          <!-- <a class="text-lg hover:text-neutral-400" href="#home">Home</a> -->
           <a class="text-lg hover:text-neutral-400" href="#about">About</a>
           <a class="text-lg hover:text-neutral-400" href="#skills">Skills</a>
           <a class="text-lg hover:text-neutral-400" href="#projects"
             >Projects</a
           >
-          <a class="text-xl hover:text-neutral-400" href="#contact">Contact</a>
+          <a class="text-lg hover:text-neutral-400" href="#contact">Contact</a>
+          <a
+            class="text-lg border border-neutral-600 text-neutral-400 md:text-sm hover:bg-white hover:text-black flex align-center p-2"
+            href="./assets/résumé.pdf"
+            download="AbogeJr Résumé"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="inline-block w-4 h-4 mr-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 13.5l3 3m0 0l3-3m-3 3v-6m1.06-4.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
+              />
+            </svg>
+            Résumé</a
+          >
         </div>
       </nav>
     </header>
@@ -246,7 +266,7 @@
 
           <!-- Skills Section -->
           <section
-            id="about"
+            id="skills"
             class="justify-center p-2 px-6 md:px-24 pt-32 md:pt-24 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
           >
             <h3 class="text-4xl">
@@ -275,7 +295,7 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-3/5 flex mx-auto flex-col items-center">
+                  <figure class="w-4/5 flex mx-auto flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -296,7 +316,7 @@
                     </figcaption>
                     <figcaption class="text-sm p-2">
                       <span class="text-neutral-400">Tech Stack:</span>
-                      Ubuntu, Docker, AWS, Kubernetes
+                      Docker, AWS, Kubernetes, NginX, Ubuntu, DigitalOcean
                     </figcaption>
                   </figure>
                 </fieldset>
@@ -322,7 +342,7 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-3/5 flex mx-auto flex-col items-center">
+                  <figure class="w-4/5 flex mx-auto flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -369,7 +389,7 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-3/5 mx-auto flex flex-col items-center">
+                  <figure class="w-4/5 mx-auto flex flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -381,16 +401,16 @@
                       <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+                        d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
                       />
                     </svg>
 
                     <figcaption class="text-sm p-2 text-center">
-                      <span class="text-neutral-400">Web Development</span>
+                      <span class="text-neutral-400">Web Design (UI)</span>
                     </figcaption>
                     <figcaption class="text-sm p-2">
                       <span class="text-neutral-400">Tech Stack:</span>
-                      JavaScript, React, Tailwind CSS, Django, Flask
+                      Figma
                     </figcaption>
                   </figure>
                 </fieldset>
@@ -472,7 +492,7 @@
                   >
                     <img
                       src="./assets/img/gaks.png"
-                      class="w-full h-60"
+                      class="w-full max-h-60"
                       alt=""
                     />
                     <figcaption class="text-sm p-2">
@@ -561,7 +581,7 @@
                   >
                     <img
                       src="./assets/img/portfolio.png"
-                      class="w-full h-60"
+                      class="w-full max-h-60"
                       alt=""
                     />
                     <figcaption class="text-sm p-2">
@@ -662,7 +682,7 @@
                   >
                     <img
                       src="./assets/img/gaks.png"
-                      class="w-full h-60"
+                      class="w-full max-h-60"
                       alt=""
                     />
                     <figcaption class="text-sm p-2">
@@ -776,27 +796,27 @@
                 <div>
                   <label
                     for="email"
-                    class="block mb-2 font-medium text-gray-300"
+                    class="block mb-2 text-sm font-medium text-gray-300"
                     >Your name</label
                   >
                   <input
                     type="email"
                     id="email"
-                    class="shadow-sm bg-neutral-900 text-black placeholder:text-sm block w-full p-3"
-                    placeholder="ex. John Doe"
+                    class="shadow-sm bg-neutral-900 placeholder:text-sm block w-full p-3"
+                    placeholder="John Doe"
                     required
                   />
                 </div>
                 <div>
                   <label
                     for="subject"
-                    class="block mb-2 font-medium text-gray-300"
+                    class="block mb-2 text-sm font-medium text-gray-300"
                     >Subject</label
                   >
                   <input
                     type="text"
                     id="subject"
-                    class="shadow-sm bg-neutral-900 text-black placeholder:text-sm block w-full p-3"
+                    class="shadow-sm bg-neutral-900 placeholder:text-sm block w-full p-3"
                     placeholder="How can I help you?"
                     required
                   />
@@ -804,14 +824,14 @@
                 <div class="sm:col-span-2">
                   <label
                     for="message"
-                    class="block mb-2 font-medium text-gray-300"
+                    class="block mb-2 text-sm font-medium text-gray-300"
                     >Your message</label
                   >
                   <textarea
                     id="message"
-                    rows="4"
-                    class="shadow-sm bg-neutral-900 text-black placeholder:text-sm block w-full p-3"
-                    placeholder="Leave a comment..."
+                    rows="2"
+                    class="shadow-sm bg-neutral-900 placeholder:text-sm block w-full p-3"
+                    placeholder="Leave message here"
                   ></textarea>
                 </div>
                 <button
