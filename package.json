@@ -1,5 +1,5 @@
 {
-  "name": "playground",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "AbogeJr",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",

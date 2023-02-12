@@ -156,3 +156,41 @@ btn.addEventListener("click", () => {
     bar.classList.toggle("open");
   }
 });
+
+let slider = tns({
+  container: ".my-slider",
+  items: 1,
+  slideBy: "page",
+  mouseDrag: "mouseDrag",
+  autoplay: true,
+  autoplayButton: ".auto",
+  autoplayText: ["Start", "Stop"],
+  controlsContainer: "#controls",
+  prevButton: ".previous",
+  nextButton: ".next",
+  touch: "true",
+  gutter: 5,
+  arrowKeys: "true",
+  speed: 500,
+  loop: "true",
+  autoplayTimeout: 3500,
+});
+
+let slider2 = tns({
+  container: ".project-slider",
+  items: 1,
+  slideBy: "page",
+  mouseDrag: "mouseDrag",
+  autoplay: true,
+  autoplayButton: ".auto-proj",
+  autoplayText: ["start", "stop"],
+  controlsContainer: "#controls-proj",
+  prevButton: ".previous-proj",
+  nextButton: ".next-proj",
+  touch: "true",
+  gutter: 10,
+  arrowKeys: "true",
+  speed: 500,
+  loop: "true",
+  autoplayTimeout: 5000,
+});
