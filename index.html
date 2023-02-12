@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website for Aboge Jr" />
+    <meta
+      name="keywords"
+      content="Developer, Web Developer, Kenya, Software Engineer, Aloys Aboge Jr, Portfolio"
+    />
+    <link rel="pingback" href="https://abogejr.me" />
+    <meta name="google-site-verification" content="https://abogejr.me" />
+    <meta name="yandex-verification" content="" />
+    <meta name="generator" content="NginX" />
+    <!-- TODO: -->
+    <!-- <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="  Opengraph content 25 char are best" />
+    <meta property="og:description" content="  #description." />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="images//hom-banner-compressed.jpg" />
+    <meta
+      property="og:image:secure_url"
+      content="images//hom-banner-compressed.jpg"
+    /> -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="660" />
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,12 +117,12 @@
     </header>
     <div class="">
       <div
-        class="h-screen w-full snap-y snap-mandatory overflow-scroll overflow-x-hidden font-sans"
+        class="h-screen w-full snap-y no-scrollbar snap-mandatory overflow-scroll overflow-x-hidden font-sans"
       >
         <!-- Hero -->
         <section
           id="hero"
-          class="w-full snap-center md:fixed pt-20 md:w-2/5 md:px-24 md:pt-24 bg-black flex h-screen flex-col relative items-center"
+          class="w-full snap-start md:fixed pt-20 md:w-2/5 md:px-24 md:pt-24 bg-black flex h-screen flex-col relative items-center"
         >
           <div
             class="absolute top-0 right-0 md:pl-20 left-0 bottom-0"
@@ -109,7 +133,7 @@
             src="./assets/img/aboge.jpg"
             alt=""
           />
-          <h1 class="text-3xl font-light text-white text-center mt-5 mb-1">
+          <h1 class="text-3xl mt-4 font-light text-white text-center mb-1">
             Aloys Aboge Jr
           </h1>
           <h2 class="text-center mb-6 text-neutral-400 text-lg">
@@ -193,7 +217,7 @@
         <!-- Content -->
         <!-- oops! fixed it! -->
         <div
-          class="md:w-3/5 snap-start snap-y snap-mandatory overflow-scroll md:float-right h-screen overflow-x-clip"
+          class="md:w-3/5 snap-start no-scrollbar snap-y snap-mandatory overflow-scroll md:float-right h-screen overflow-x-clip"
         >
           <!-- About Section -->
           <section
@@ -223,7 +247,7 @@
           <!-- Skills Section -->
           <section
             id="about"
-            class="justify-center p-2 px-6 md:px-24 pt-16 md:pt-24 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
+            class="justify-center p-2 px-6 md:px-24 pt-32 md:pt-24 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
           >
             <h3 class="text-4xl">
               My <span class="text-neutral-400">Skills</span>
@@ -251,7 +275,7 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-full flex flex-col items-center">
+                  <figure class="w-3/5 flex mx-auto flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -298,7 +322,7 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-full flex flex-col items-center">
+                  <figure class="w-3/5 flex mx-auto flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -345,7 +369,7 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-full flex flex-col items-center">
+                  <figure class="w-3/5 mx-auto flex flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -413,7 +437,7 @@
           <!-- Projects Section -->
           <section
             id="projects"
-            class="space-y-4 justify-center p-2 px-6 md:px-24 pt-16 md:pt-24 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
+            class="space-y-4 justify-center p-2 px-6 md:px-24 pt-32 md:pt-24 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
           >
             <h3 class="text-4xl">
               My <span class="text-neutral-400">Projects</span>
@@ -741,14 +765,14 @@
           <!-- Contact Section -->
           <section
             id="contact"
-            class="flex flex-col justify-center p-2 px-6 md:px-24 pt-24 md:pt-24 snap-start w-full h-screen"
+            class="flex flex-col justify-center p-2 pb-5 px-6 md:px-24 pt-24 md:pt-24 snap-start w-full h-screen"
           >
             <div class="mx-auto w-full max-w-screen-md">
-              <h3 class="mb-10 text-4xl tracking-tight">
+              <h3 class="mb-6 text-4xl tracking-tight">
                 <span class="text-neutral-400">Contact</span> Me
               </h3>
 
-              <form action="#" class="space-y-7">
+              <form action="#" class="space-y-5">
                 <div>
                   <label
                     for="email"
@@ -792,7 +816,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="py-3 px-7 border text-sm border-neutral-600 hover:bg-neutral-800 hover:text-white text-center"
+                  class="py-2 w-full px-7 border text-sm border-neutral-600 hover:bg-neutral-800 hover:text-white text-center"
                 >
                   Send
                   <span class="message-icon ml-2"
