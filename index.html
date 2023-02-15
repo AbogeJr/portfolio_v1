@@ -88,11 +88,13 @@
       <nav
         class="w-full bg-black/70 text-white px-6 md:px-0 py-4 z-20 flex items-center justify-between relative"
       >
-        <h1 class="text-xl">
-          <span class="text-neutral-400">&lt;</span> A
-          <span class="text-neutral-400">J</span>
-          <span class="text-neutral-400">/&gt;</span>
-        </h1>
+        <a href="./index.html">
+          <h1 class="text-xl">
+            <span class="text-neutral-400">&lt;</span> A
+            <span class="text-neutral-400">J</span>
+            <span class="text-neutral-400">/&gt;</span>
+          </h1>
+        </a>
 
         <!-- Responsive Menu Button -->
         <div id="menu-btn" class="md:hidden menu-button">
@@ -267,7 +269,7 @@
           <!-- Skills Section -->
           <section
             id="skills"
-            class="justify-center p-2 px-6 md:px-24 pt-32 md:pt-24 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
+            class="justify-center p-2 px-6 md:px-24 pt-36 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
           >
             <h3 class="text-4xl">
               My <span class="text-neutral-400">Skills</span>
@@ -278,13 +280,13 @@
               <div
                 class="w-full h-full flex flex-col justify-center items-center text-xl"
               >
-                <fieldset class="border border-neutral-700 w-full py-4">
+                <fieldset class="border border-neutral-700 w-full py-6">
                   <legend class="px-5 ml-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      stroke-width="0.5"
                       stroke="currentColor"
                       class="w-6 h-6"
                     >
@@ -295,14 +297,111 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-4/5 flex mx-auto flex-col items-center">
+                  <figure class="w-full flex mx-auto flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      stroke-width="0.5"
                       stroke="currentColor"
-                      class="w-2/3 h-2/3 md:w-1/3 md:h-1/3"
+                      class="w-3/5 h-3/5 md:w-1/3 md:h-1/3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+                      />
+                    </svg>
+
+                    <figcaption class="text-sm p-2">
+                      <span class="text-neutral-400">Web Development</span>
+                    </figcaption>
+                    <figcaption class="text-sm p-2">
+                      <span class="text-neutral-400">Tech Stack:</span>
+                      JavaScript, React, Tailwind CSS, Django, Flask, Node,
+                      ExpressJS, WordPress
+                    </figcaption>
+                  </figure>
+                </fieldset>
+              </div>
+
+              <!-- Item 2 -->
+              <div
+                class="w-full h-full flex flex-col justify-center items-center text-xl"
+              >
+                <fieldset class="border border-neutral-700 w-full py-6">
+                  <legend class="px-5 ml-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
+                      />
+                    </svg>
+                  </legend>
+                  <figure class="w-full flex mx-auto flex-col items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.3"
+                      stroke="currentColor"
+                      class="w-3/5 h-3/5 md:w-1/3 md:h-1/3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
+                      />
+                    </svg>
+
+                    <figcaption class="text-sm p-2 text-center">
+                      <span class="text-neutral-400">Programming</span>
+                    </figcaption>
+                    <figcaption class="text-sm p-2">
+                      <span class="text-neutral-400">Tech Stack:</span>
+                      Python, JavaScript, C
+                    </figcaption>
+                  </figure>
+                </fieldset>
+              </div>
+
+              <!-- Item 2 -->
+              <div
+                class="w-full h-full flex flex-col justify-center items-center text-xl"
+              >
+                <fieldset class="border border-neutral-700 w-full py-6">
+                  <legend class="px-5 ml-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
+                      />
+                    </svg>
+                  </legend>
+                  <figure class="w-full flex mx-auto flex-col items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.5"
+                      stroke="currentColor"
+                      class="w-3/5 h-3/5 md:w-1/3 md:h-1/3"
                     >
                       <path
                         stroke-linecap="round"
@@ -312,73 +411,29 @@
                     </svg>
 
                     <figcaption class="text-sm p-2 text-center">
-                      <span class="text-neutral-400">Cloud Development</span>
+                      <span class="text-neutral-400"
+                        >Cloud Development/Management</span
+                      >
                     </figcaption>
                     <figcaption class="text-sm p-2">
                       <span class="text-neutral-400">Tech Stack:</span>
-                      Docker, AWS, Kubernetes, NginX, Ubuntu, DigitalOcean
+                      Docker, AWS, Kubernetes, DigitalOcean, Heroku, NginX
                     </figcaption>
                   </figure>
                 </fieldset>
               </div>
-              <!-- Item 2 -->
-              <div
-                class="w-full h-full flex flex-col justify-center items-center text-xl"
-              >
-                <fieldset class="border border-neutral-700 w-full py-4">
-                  <legend class="px-5 ml-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
-                      />
-                    </svg>
-                  </legend>
-                  <figure class="w-4/5 flex mx-auto flex-col items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-2/3 h-2/3 md:w-1/3 md:h-1/3"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-                      />
-                    </svg>
 
-                    <figcaption class="text-sm p-2 text-center">
-                      <span class="text-neutral-400">Web Development</span>
-                    </figcaption>
-                    <figcaption class="text-sm p-2">
-                      <span class="text-neutral-400">Tech Stack:</span>
-                      JavaScript, React, Tailwind CSS, Django, Flask
-                    </figcaption>
-                  </figure>
-                </fieldset>
-              </div>
               <!-- Item 3 -->
               <div
                 class="w-full h-full flex flex-col justify-center items-center text-xl"
               >
-                <fieldset class="border border-neutral-700 w-full py-4">
+                <fieldset class="border border-neutral-700 w-full py-6">
                   <legend class="px-5 ml-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      stroke-width="0.5"
                       stroke="currentColor"
                       class="w-6 h-6"
                     >
@@ -389,14 +444,14 @@
                       />
                     </svg>
                   </legend>
-                  <figure class="w-4/5 mx-auto flex flex-col items-center">
+                  <figure class="w-full mx-auto flex flex-col items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      stroke-width="0.3"
                       stroke="currentColor"
-                      class="w-2/3 h-2/3 md:w-1/3 md:h-1/3"
+                      class="w-3/5 h-3/5 md:w-1/3 md:h-1/3"
                     >
                       <path
                         stroke-linecap="round"
@@ -410,13 +465,13 @@
                     </figcaption>
                     <figcaption class="text-sm p-2">
                       <span class="text-neutral-400">Tech Stack:</span>
-                      Figma
+                      Figma, Uizard
                     </figcaption>
                   </figure>
                 </fieldset>
               </div>
             </div>
-            <div id="controls" class="controls flex justify-between">
+            <!-- <div id="controls" class="controls flex justify-between">
               <button class="previous">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -451,13 +506,13 @@
                   />
                 </svg>
               </button>
-            </div>
+            </div> -->
           </section>
 
           <!-- Projects Section -->
           <section
             id="projects"
-            class="space-y-4 justify-center p-2 px-6 md:px-24 pt-32 md:pt-24 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
+            class="space-y-4 justify-center p-2 px-6 md:px-24 pt-36 snap-start w-full h-screen md:flex-shrink-0 md:h-screen"
           >
             <h3 class="text-4xl">
               My <span class="text-neutral-400">Projects</span>
@@ -469,7 +524,7 @@
                 class="w-full h-full md:w-full md:h-full flex-shrink-0 flex flex-col justify-center space-y-5 items-center text-xl"
               >
                 <fieldset
-                  class="border group relative border-neutral-700 w-full"
+                  class="border py-4 group relative border-neutral-700 w-full"
                 >
                   <legend class="px-5 ml-3">
                     <svg
@@ -558,7 +613,7 @@
                 class="w-full h-full md:w-full md:h-full flex-shrink-0 flex flex-col justify-center space-y-5 items-center text-xl"
               >
                 <fieldset
-                  class="border group relative border-neutral-700 w-full"
+                  class="border py-4 group relative border-neutral-700 w-full"
                 >
                   <legend class="px-5 ml-3">
                     <svg
@@ -590,7 +645,8 @@
                     </figcaption>
                     <figcaption class="text-sm p-2">
                       <span class="text-neutral-400">Technologies used:</span>
-                      HTML5, TailwindCSS, jQuery, NginX, ParticleJS,tiny-slider
+                      HTML5, TailwindCSS, jQuery, ParticleJS,tiny-slider, NginX,
+                      DigitalOcean
                     </figcaption>
                   </figure>
                   <figcaption
@@ -654,97 +710,16 @@
                   </figcaption>
                 </fieldset>
               </div>
-              <!-- Project 3 -->
-              <div
-                class="w-full h-full md:w-full md:h-full flex-shrink-0 flex flex-col justify-center space-y-5 items-center text-xl"
-              >
-                <fieldset
-                  class="border group relative border-neutral-700 w-full"
-                >
-                  <legend class="px-5 ml-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
-                      />
-                    </svg>
-                  </legend>
-                  <figure
-                    class="w-full pt-2 transition-all group-hover:blur-sm"
-                  >
-                    <img
-                      src="./assets/img/gaks.png"
-                      class="w-full max-h-60"
-                      alt=""
-                    />
-                    <figcaption class="text-sm p-2">
-                      <span class="text-neutral-400">Freelancing Project:</span>
-                      An Architecture Website
-                    </figcaption>
-                    <figcaption class="text-sm p-2">
-                      <span class="text-neutral-400">Technologies used:</span>
-                      HTML5, CSS3, Bootstrap, Owl Carousel, jQuery, Netlify
-                    </figcaption>
-                  </figure>
-                  <figcaption
-                    class="opacity-0 flex group-hover:opacity-100 backdrop-blur-xl transition-opacity absolute bottom-0"
-                  >
-                    <!-- Eye icon -->
-                    <button
-                      class="inline-block p-2 justify-center text-sm border border-neutral-700"
-                      title="View it Live"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="#fff"
-                        class="w-6 h-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </button>
-                    <!-- Github -->
-                    <button
-                      class="inline-block p-2 justify-center text-sm border border-neutral-700"
-                      title="View it on Github"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 496 512"
-                        class="w-6 h-6"
-                        style="color: #fff"
-                      >
-                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                        <path
-                          fill="currentColor"
-                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                        />
-                      </svg>
-                    </button>
-                  </figcaption>
-                </fieldset>
-              </div>
             </div>
-            <div id="controls-proj" class="flex justify-between">
+            <div class="slider-nav flex space-x-3 justify-center">
+              <div
+                class="nav-cell w-3 h-3 border border-neutral-500 rounded-full"
+              ></div>
+              <div
+                class="nav-cell w-3 h-3 border border-neutral-500 rounded-full"
+              ></div>
+            </div>
+            <!-- <div id="controls-proj" class="flex justify-between">
               <button class="previous-proj">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -779,13 +754,13 @@
                   />
                 </svg>
               </button>
-            </div>
+            </div> -->
           </section>
 
           <!-- Contact Section -->
           <section
             id="contact"
-            class="flex flex-col justify-center p-2 pb-5 px-6 md:px-24 pt-24 md:pt-24 snap-start w-full h-screen"
+            class="space-y-4 justify-center p-2 px-6 md:px-24 pt-36 snap-start overflow-scroll w-full h-screen md:flex-shrink-0 md:h-screen"
           >
             <div class="mx-auto w-full max-w-screen-md">
               <h3 class="mb-6 text-4xl tracking-tight">
@@ -836,7 +811,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="py-2 w-full px-7 border text-sm border-neutral-600 hover:bg-neutral-800 hover:text-white text-center"
+                  class="py-3 px-7 border text-sm border-neutral-600 hover:bg-neutral-800 hover:text-white text-center"
                 >
                   Send
                   <span class="message-icon ml-2"

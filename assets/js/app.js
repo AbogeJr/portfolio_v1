@@ -163,17 +163,19 @@ let slider = tns({
   slideBy: "page",
   mouseDrag: "mouseDrag",
   autoplay: true,
-  autoplayButton: ".auto",
-  autoplayText: ["Start", "Stop"],
-  controlsContainer: "#controls",
-  prevButton: ".previous",
-  nextButton: ".next",
+  controls: false,
+  // autoplayButton: ".auto",
+  autoplayButtonOutput: false,
+  // autoplayText: ["Start", "Stop"],
+  // controlsContainer: "#controls",
+  // prevButton: ".previous",
+  // nextButton: ".next",
   touch: "true",
   gutter: 5,
-  arrowKeys: "true",
+  arrowKeys: true,
   speed: 500,
-  loop: "true",
-  autoplayTimeout: 3500,
+  loop: true,
+  autoplayTimeout: 4000,
 });
 
 let slider2 = tns({
@@ -182,15 +184,35 @@ let slider2 = tns({
   slideBy: "page",
   mouseDrag: "mouseDrag",
   autoplay: true,
-  autoplayButton: ".auto-proj",
-  autoplayText: ["start", "stop"],
-  controlsContainer: "#controls-proj",
-  prevButton: ".previous-proj",
-  nextButton: ".next-proj",
+  controls: false,
+  // nav: true,
+  navPosition: "bottom",
+  navContainer: ".slider-nav",
+  // autoplayButton: ".auto-proj",
+  // autoplayText: ["start", "stop"],
+  // controlsContainer: "#controls-proj",
+  // prevButton: ".previous-proj",
+  // nextButton: ".next-proj",
+  autoplayButtonOutput: false,
   touch: "true",
   gutter: 10,
-  arrowKeys: "true",
+  arrowKeys: true,
   speed: 500,
-  loop: "true",
+  loop: true,
   autoplayTimeout: 5000,
 });
+
+// TODO: Implement slider navigation styling
+// slider2.events.on("indexChanged", function () {
+//   console.log("Slider moved to new slide");
+//   slider2
+//     .getInfo()
+//     .navItems[slider2.getInfo().navCurrentIndex].classList.toggle(
+//       "bg-neutral-500"
+//     );
+//   slider2
+//     .getInfo()
+//     .navItems[slider2.getInfo().navCurrentIndexCached].classList.toggle(
+//       "bg-neutral-500"
+//     );
+// });
